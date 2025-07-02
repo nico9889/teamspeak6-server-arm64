@@ -36,7 +36,9 @@ docker run -it --rm \
 
 To use it with Podman, write the same commands replacing `docker` with `podman`.
 
-Please refer to the original TeamSpeak 6 server repository (linked below) to know the environmental variables supported by the server for configuration. Command-line arguments are not supported at this time.
+Please refer to the original TeamSpeak 6 server repository (linked below) to know the environmental variables supported by the server for configuration.
+
+If you need to pass command line arguments to `tsserver`, pass them to `start.sh` instead to ensure a correct execution.
 
 # References
 * Original TeamSpeak 6 server repository: https://github.com/teamspeak/teamspeak6-server

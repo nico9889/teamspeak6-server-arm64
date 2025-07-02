@@ -5,4 +5,4 @@
 cp -r /opt/tsserver/sql /var/tsserver 
 
 # Starting the TS6 server using the Box64 emulator
-box64 /opt/tsserver/tsserver
+box64 /opt/tsserver/tsserver $@
