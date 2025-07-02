@@ -26,6 +26,7 @@ RUN chmod +x /opt/tsserver/start.sh
 # Creating the workdir folder
 RUN mkdir /var/tsserver
 WORKDIR /var/tsserver
+RUN chown $USERNAME -R /var/tsserver
 
 # Setting the container to run as the rootless user
 USER $USERNAME
