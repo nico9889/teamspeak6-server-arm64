@@ -1,7 +1,15 @@
+# Based on https://github.com/teamspeak/teamspeak6-server/blob/9fa5ed86234e27ff969d9f95189e0b785358b520/compose/example-compose-sqlite.yaml
+#
+# If you want to use MariaDB edit this file accordingly, 
+# using https://github.com/teamspeak/teamspeak6-server/blob/9fa5ed86234e27ff969d9f95189e0b785358b520/compose/example-compose-mariadb.yaml as a reference.
+
 services:
   teamspeak:
+    # image: teamspeaksystems/teamspeak6-server:latest # Make sure this is commented as the original image doesn't support ARM64
     container_name: teamspeak-server
     restart: unless-stopped
+    # Make sure not to delete those 2 lines, and that this file is in the same folder as the Dockerfile and start.sh.
+    # A pre-built DockerHub image may be provided in the future, depending how the beta test will evolve.
     build:
         dockerfile: ./Dockerfile
     ports:
