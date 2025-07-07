@@ -7,7 +7,7 @@ On an Orange Pi 5,  the first boot of the server, which requires keys precomputa
 
 At this time I only tested that the server starts and it's possible to connect to it.
 
-**Please note that ARM64 is not officially supported by TeamSpeak. If you encounter bugs by using this image, please avoid reporting them to TeamSpeak unless you are 100% they are not related to the emulator. You may want to report them to https://github.com/ptitSeb/box64 to attempt to improve the emulation support instead.**
+**Please note that ARM64 is not officially supported by TeamSpeak. If you encounter bugs by using this image, please avoid reporting them to TeamSpeak unless you are 100% sure they are not related to the emulator. You may want to report them to https://github.com/ptitSeb/box64 to attempt to improve the emulation support instead.**
 
 I tested this image by using Podman, but it should work correctly on Docker as well as they are pretty much equivalent.
 
